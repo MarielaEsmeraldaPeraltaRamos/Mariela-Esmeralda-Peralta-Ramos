@@ -146,7 +146,7 @@
     <main>
         <section id="datos">
             <h2>Datos Generales</h2>
-            <img src="/ruta-de-tu-foto.jpg" alt="Mariela Esmeralda Peralta Ramos" style="width: 200px; height: 200px; border-radius: 8px; margin: 20px 0;">
+            <img src="nombre-de-tu-foto.jpg" alt="Mariela Esmeralda Peralta Ramos" style="width: 200px; height: 200px; border-radius: 8px; margin: 20px 0;">
             <p>Mi nombre es Mariela Esmeralda Peralta Ramos, tengo 20 años. Estudio la carrera de Administración de Negocios en la Universidad Católica San Pablo.</p>
         </section>
         <section id="companeros">
