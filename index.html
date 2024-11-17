@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página personal de Mariela Esmeralda Peralta Ramos">
+    <meta name="keywords" content="Mariela Esmeralda Peralta Ramos, Administración de Negocios, UCSP">
+    <meta name="author" content="Mariela Esmeralda Peralta Ramos">
+    <title>Mariela Esmeralda Peralta Ramos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        ul li a {
+            color: #000;
+            text-decoration: none;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .contact-icons a {
+            text-decoration: none;
+        }
+        .contact-icons a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.2s;
+        }
+        .contact-icons a img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos del modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .modal-header h2 {
+            margin-top: 0;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mariela Esmeralda Peralta Ramos</h1>
+        <p>Estudiante de Administración de Negocios</p>
+    </header>
+    <nav>
+        <a href="#datos">Datos Generales</a>
+        <a href="#" id="openCourses">Cursos</a>
+        <a href="#companeros">Compañeros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <main>
+        <section id="datos">
+            <h2>Datos Generales</h2>
+            <img src="/ruta-de-tu-foto.jpg" alt="Mariela Esmeralda Peralta Ramos" style="width: 200px; height: 200px; border-radius: 8px; margin: 20px 0;">
+            <p>Mi nombre es Mariela Esmeralda Peralta Ramos, tengo 20 años. Estudio la carrera de Administración de Negocios en la Universidad Católica San Pablo.</p>
+        </section>
+        <section id="companeros">
+            <h2>Compañeros de Clase</h2>
+            <ul>
+                <li><a href="https://rommyna.github.io/referencias.html" target="_blank">Rommyna Zuñiga Tejada</a></li>
+                <li><a href="https://manuelvargas939.github.io/ManuelVargas-P-ginaWeb/" target="_blank">Manuel Vargas</a></li>
+                <li><a href="https://ashlee-allison-rendon-rios.neocities.org/" target="_blank">Ashlee Allison Rendón Ríos</a></li>
+                <li><a href="https://ayleneyn.github.io/AYLEN-ELENA-YUCRA-NINA/" target="_blank">Aylen Elena Yucra Nina</a></li>
+                <li><a href="https://alanisaguilar.github.io/Alanis-Aguilar-Quezada.github.io/" target="_blank">Alanis Aguilar Quezada</a></li>
+                <li><a href="https://alice-gabriela-sucasaca-i.github.io/" target="_blank">Alice Gabriela Sucasaca</a></li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contact-icons">
+                <a href="mailto:mariela.peralta@ucsp.edu.pe" title="Correo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Icono Correo">
+                </a>
+                <a href="https://pe.linkedin.com/in/mariela-esmeralda-peralta-ramos-848a4b24a" target="_blank" title="LinkedIn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="Icono LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/mariela.prs/profilecard/?igsh=MXNna2xvNDdqMTE2Zg==" target="_blank" title="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Icono Instagram">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mariela Esmeralda Peralta Ramos. Todos los derechos reservados.</p>
+    </footer>
+    <div id="coursesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Cursos</h2>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Comunicación I</li>
+                    <li>Matemática Básica</li>
+                    <li>Contabilidad para Administradores</li>
+                    <li>Metodología del Estudio</li>
+                    <li>Economía General</li>
+                    <li>Fundamentos de Administración</li>
+                    <li>Introducción a la Vida Universitaria</li>
+                    <li>Álgebra y Geometría</li>
+                    <li>Oratoria</li>
+                    <li>Introducción a la Filosofía</li>
+                    <li>Comunicación II</li>
+                    <li>Fundamentos de Marketing</li>
+                    <li>Derecho Empresarial</li>
+                    <li>Pensamiento Crítico e Innovación</li>
+                    <li>Cálculo en Una Variable</li>
+                    <li>Análisis de Datos I</li>
+                    <li>Antropología Filosófica y Teológica</li>
+                    <li>Apreciación Artística</li>
+                    <li>Comportamiento del Consumidor</li>
+                    <li>Lógica y Argumentación</li>
+                    <li>Teología I</li>
+                    <li>Estadística y Probabilidades</li>
+                    <li>Desarrollo de Habilidades para el Trabajo en Equipo</li>
+                    <li>Costos y Planeamiento Presupuestal</li>
+                    <li>Gnoseología</li>
+                    <li>Matemáticas Financieras</li>
+                    <li>Moral</li>
+                    <li>Estrategia de Ventas y Distribución</li>
+                    <li>Desarrollo de Habilidades de Negociación</li>
+                    <li>Psicología</li>
+                    <li>Historia de la Cultura Occidental I</li>
+                    <li>Análisis, Diseño y Gestión de Procesos</li>
+                    <li>Comportamiento Organizacional</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const modal = document.getElementById('coursesModal');
+        const openCourses = document.getElementById('openCourses');
+        const close = document.querySelector('.close');
+
+        openCourses.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        close.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
